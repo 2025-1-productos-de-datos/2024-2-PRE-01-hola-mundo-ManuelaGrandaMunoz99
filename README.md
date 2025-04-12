@@ -13,10 +13,18 @@ source setup.sh
 Ejecute los siguientes comandos en el terminal:
 
 ```bash
-python3 -m venv .venv
-.venv\Scripts\activate
-setup
+python -m venv .venv
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+.venv\Scripts\Activate
+.\setup.bat
 ```
+
+codigo que Habilita la ejecución de scripts en PowerShell:
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+
 
 # Ejecución de pruebas
 
